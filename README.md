@@ -9,6 +9,12 @@ An intelligent, AI-assisted system to automate and accelerate functional coverag
 - **Prioritization Algorithm**: Ranks test suggestions based on coverage impact, difficulty, and dependencies
 - **Coverage Closure Prediction** (Bonus): Estimates time to full coverage, predicts likelihood of achieving 100% coverage, and identifies blocking bins
 
+### Screenshots
+
+![App Output](screenshots/img1.png)
+![App Output](screenshots/img2.png)
+![App Output](screenshots/img3.png)
+
 ## Installation
 
 ### Prerequisites
@@ -21,6 +27,7 @@ An intelligent, AI-assisted system to automate and accelerate functional coverag
 1. Clone or download this repository
 
 2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -187,6 +194,7 @@ priority_score = (coverage_impact_weight × coverage_impact) +
 ```
 
 Where:
+
 - **Coverage Impact**: Higher for bins in coverpoints with lower coverage
 - **Inverse Difficulty**: Easier tests get higher scores (Easy=1.0, Medium=0.7, Hard=0.4, Very Hard=0.2)
 - **Dependency Score**: Fewer dependencies = higher score (1.0 / (1 + num_dependencies))
@@ -200,6 +208,7 @@ See `DESIGN.md` for detailed discussion of scalability, limitations, and future 
 ### Import Errors
 
 If you encounter import errors, ensure you're running from the project root:
+
 ```bash
 python -m src.main <coverage_report>
 ```
@@ -222,6 +231,7 @@ This project is provided as-is for educational and demonstration purposes.
 ## Contributing
 
 This is a demonstration project. For production use, consider:
+
 - Enhanced error handling
 - Support for additional coverage report formats
 - Integration with verification frameworks
