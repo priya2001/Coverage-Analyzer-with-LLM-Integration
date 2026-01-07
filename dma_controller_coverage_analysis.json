@@ -1,0 +1,218 @@
+{
+  "coverage_report": {
+    "design_name": "DMA Controller",
+    "overall_coverage": 72.5,
+    "uncovered_bins_count": 9,
+    "uncovered_crosses_count": 0
+  },
+  "test_suggestions": [
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_transfer_cg",
+        "coverpoint": "transfer_type",
+        "bin": "PERIPHERAL_TO_PERIPHERAL",
+        "hit_count": 0,
+        "coverage_percentage": 0.0
+      },
+      "description": "Test to cover PERIPHERAL_TO_PERIPHERAL in transfer_type",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure transfer_type",
+        "3. Trigger condition for PERIPHERAL_TO_PERIPHERAL",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_transfer_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin PERIPHERAL_TO_PERIPHERAL by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.8099999999999999
+    },
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_transfer_cg",
+        "coverpoint": "transfer_size",
+        "bin": "DOUBLEWORD",
+        "hit_count": 0,
+        "coverage_percentage": 0.0
+      },
+      "description": "Test to cover DOUBLEWORD in transfer_size",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure transfer_size",
+        "3. Trigger condition for DOUBLEWORD",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_transfer_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin DOUBLEWORD by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.8099999999999999
+    },
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_transfer_cg",
+        "coverpoint": "transfer_size",
+        "bin": "BURST_8",
+        "hit_count": 0,
+        "coverage_percentage": 0.0
+      },
+      "description": "Test to cover BURST_8 in transfer_size",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure transfer_size",
+        "3. Trigger condition for BURST_8",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_transfer_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin BURST_8 by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.8099999999999999
+    },
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_transfer_cg",
+        "coverpoint": "address_alignment",
+        "bin": "MISALIGNED_2BYTE",
+        "hit_count": 0,
+        "coverage_percentage": 0.0
+      },
+      "description": "Test to cover MISALIGNED_2BYTE in address_alignment",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure address_alignment",
+        "3. Trigger condition for MISALIGNED_2BYTE",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_transfer_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin MISALIGNED_2BYTE by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.8099999999999999
+    },
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_transfer_cg",
+        "coverpoint": "address_alignment",
+        "bin": "MISALIGNED_4BYTE",
+        "hit_count": 0,
+        "coverage_percentage": 0.0
+      },
+      "description": "Test to cover MISALIGNED_4BYTE in address_alignment",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure address_alignment",
+        "3. Trigger condition for MISALIGNED_4BYTE",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_transfer_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin MISALIGNED_4BYTE by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.8099999999999999
+    },
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_error_cg",
+        "coverpoint": "error_type",
+        "bin": "BUS_ERROR",
+        "hit_count": 0,
+        "coverage_percentage": 0.0
+      },
+      "description": "Test to cover BUS_ERROR in error_type",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure error_type",
+        "3. Trigger condition for BUS_ERROR",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_error_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin BUS_ERROR by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.8099999999999999
+    },
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_priority_cg",
+        "coverpoint": "channel_priority",
+        "bin": "CRITICAL",
+        "hit_count": 0,
+        "coverage_percentage": 0.0
+      },
+      "description": "Test to cover CRITICAL in channel_priority",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure channel_priority",
+        "3. Trigger condition for CRITICAL",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_priority_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin CRITICAL by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.8099999999999999
+    },
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_priority_cg",
+        "coverpoint": "priority_arbitration",
+        "bin": "WEIGHTED_ROUND_ROBIN",
+        "hit_count": 0,
+        "coverage_percentage": 50.0
+      },
+      "description": "Test to cover WEIGHTED_ROUND_ROBIN in priority_arbitration",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure priority_arbitration",
+        "3. Trigger condition for WEIGHTED_ROUND_ROBIN",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_priority_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin WEIGHTED_ROUND_ROBIN by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.5599999999999999
+    },
+    {
+      "uncovered_bin": {
+        "covergroup": "dma_priority_cg",
+        "coverpoint": "priority_arbitration",
+        "bin": "ADAPTIVE",
+        "hit_count": 0,
+        "coverage_percentage": 50.0
+      },
+      "description": "Test to cover ADAPTIVE in priority_arbitration",
+      "test_outline": [
+        "1. Initialize DMA Controller",
+        "2. Configure priority_arbitration",
+        "3. Trigger condition for ADAPTIVE",
+        "4. Verify coverage hit"
+      ],
+      "difficulty": "medium",
+      "dependencies": [
+        "dma_priority_cg setup"
+      ],
+      "reasoning": "This test targets the uncovered bin ADAPTIVE by exercising the specific condition required to hit this coverage point.",
+      "estimated_time_hours": 4.0,
+      "priority_score": 0.5599999999999999
+    }
+  ],
+  "prediction": null
+}
