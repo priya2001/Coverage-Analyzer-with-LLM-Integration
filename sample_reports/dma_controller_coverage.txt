@@ -1,0 +1,115 @@
+Functional Coverage Report
+Generated: 2024-01-15 10:30:00
+Tool: SystemVerilog Coverage Analyzer v2.1
+
+Design: DMA Controller
+Overall Coverage: 72.5%
+
+================================================================================
+Covergroup: dma_transfer_cg
+Coverage: 68.3%
+================================================================================
+
+Coverpoint: transfer_type
+Coverage: 75.0%
+Bin: MEMORY_TO_MEMORY - Hits: 45 - Status: Covered
+Bin: MEMORY_TO_PERIPHERAL - Hits: 32 - Status: Covered
+Bin: PERIPHERAL_TO_MEMORY - Hits: 28 - Status: Covered
+Bin: PERIPHERAL_TO_PERIPHERAL - Hits: 0 - Status: Uncovered
+
+Coverpoint: transfer_size
+Coverage: 80.0%
+Bin: BYTE - Hits: 120 - Status: Covered
+Bin: HALFWORD - Hits: 95 - Status: Covered
+Bin: WORD - Hits: 78 - Status: Covered
+Bin: DOUBLEWORD - Hits: 0 - Status: Uncovered
+Bin: BURST_8 - Hits: 0 - Status: Uncovered
+
+Coverpoint: address_alignment
+Coverage: 66.7%
+Bin: ALIGNED - Hits: 200 - Status: Covered
+Bin: MISALIGNED_1BYTE - Hits: 15 - Status: Covered
+Bin: MISALIGNED_2BYTE - Hits: 0 - Status: Uncovered
+Bin: MISALIGNED_4BYTE - Hits: 0 - Status: Uncovered
+
+Coverpoint: burst_length
+Coverage: 60.0%
+Bin: SINGLE - Hits: 180 - Status: Covered
+Bin: INCR_4 - Hits: 45 - Status: Covered
+Bin: INCR_8 - Hits: 12 - Status: Covered
+Bin: INCR_16 - Hits: 0 - Status: Uncovered
+Bin: WRAP_4 - Hits: 0 - Status: Uncovered
+
+Cross: transfer_type x transfer_size
+Coverage: 55.0%
+Bin: MEMORY_TO_MEMORY x BYTE - Hits: 20 - Status: Covered
+Bin: MEMORY_TO_MEMORY x HALFWORD - Hits: 15 - Status: Covered
+Bin: MEMORY_TO_MEMORY x WORD - Hits: 10 - Status: Covered
+Bin: MEMORY_TO_PERIPHERAL x BYTE - Hits: 18 - Status: Covered
+Bin: MEMORY_TO_PERIPHERAL x HALFWORD - Hits: 10 - Status: Covered
+Bin: MEMORY_TO_PERIPHERAL x WORD - Hits: 4 - Status: Covered
+Bin: PERIPHERAL_TO_MEMORY x BYTE - Hits: 15 - Status: Covered
+Bin: PERIPHERAL_TO_MEMORY x HALFWORD - Hits: 8 - Status: Covered
+Bin: PERIPHERAL_TO_MEMORY x WORD - Hits: 5 - Status: Covered
+Bin: PERIPHERAL_TO_PERIPHERAL x BYTE - Hits: 0 - Status: Uncovered
+Bin: PERIPHERAL_TO_PERIPHERAL x HALFWORD - Hits: 0 - Status: Uncovered
+Bin: PERIPHERAL_TO_PERIPHERAL x WORD - Hits: 0 - Status: Uncovered
+Bin: MEMORY_TO_MEMORY x DOUBLEWORD - Hits: 0 - Status: Uncovered
+Bin: MEMORY_TO_PERIPHERAL x DOUBLEWORD - Hits: 0 - Status: Uncovered
+Bin: PERIPHERAL_TO_MEMORY x DOUBLEWORD - Hits: 0 - Status: Uncovered
+Bin: PERIPHERAL_TO_PERIPHERAL x DOUBLEWORD - Hits: 0 - Status: Uncovered
+
+================================================================================
+Covergroup: dma_error_cg
+Coverage: 85.0%
+================================================================================
+
+Coverpoint: error_type
+Coverage: 90.0%
+Bin: NO_ERROR - Hits: 500 - Status: Covered
+Bin: ADDRESS_ERROR - Hits: 25 - Status: Covered
+Bin: SIZE_ERROR - Hits: 18 - Status: Covered
+Bin: TIMEOUT_ERROR - Hits: 12 - Status: Covered
+Bin: BUS_ERROR - Hits: 0 - Status: Uncovered
+
+Coverpoint: error_recovery
+Coverage: 80.0%
+Bin: AUTOMATIC_RECOVERY - Hits: 45 - Status: Covered
+Bin: MANUAL_RECOVERY - Hits: 15 - Status: Covered
+Bin: NO_RECOVERY - Hits: 0 - Status: Uncovered
+
+Cross: error_type x error_recovery
+Coverage: 75.0%
+Bin: ADDRESS_ERROR x AUTOMATIC_RECOVERY - Hits: 15 - Status: Covered
+Bin: ADDRESS_ERROR x MANUAL_RECOVERY - Hits: 10 - Status: Covered
+Bin: SIZE_ERROR x AUTOMATIC_RECOVERY - Hits: 12 - Status: Covered
+Bin: SIZE_ERROR x MANUAL_RECOVERY - Hits: 6 - Status: Covered
+Bin: TIMEOUT_ERROR x AUTOMATIC_RECOVERY - Hits: 8 - Status: Covered
+Bin: TIMEOUT_ERROR x MANUAL_RECOVERY - Hits: 4 - Status: Covered
+Bin: BUS_ERROR x AUTOMATIC_RECOVERY - Hits: 0 - Status: Uncovered
+Bin: BUS_ERROR x MANUAL_RECOVERY - Hits: 0 - Status: Uncovered
+Bin: BUS_ERROR x NO_RECOVERY - Hits: 0 - Status: Uncovered
+Bin: ADDRESS_ERROR x NO_RECOVERY - Hits: 0 - Status: Uncovered
+
+================================================================================
+Covergroup: dma_priority_cg
+Coverage: 65.0%
+================================================================================
+
+Coverpoint: channel_priority
+Coverage: 70.0%
+Bin: LOW - Hits: 150 - Status: Covered
+Bin: MEDIUM - Hits: 120 - Status: Covered
+Bin: HIGH - Hits: 95 - Status: Covered
+Bin: CRITICAL - Hits: 0 - Status: Uncovered
+
+Coverpoint: priority_arbitration
+Coverage: 60.0%
+Bin: ROUND_ROBIN - Hits: 200 - Status: Covered
+Bin: FIXED_PRIORITY - Hits: 100 - Status: Covered
+Bin: WEIGHTED_ROUND_ROBIN - Hits: 0 - Status: Uncovered
+Bin: ADAPTIVE - Hits: 0 - Status: Uncovered
+
+================================================================================
+End of Report
+================================================================================

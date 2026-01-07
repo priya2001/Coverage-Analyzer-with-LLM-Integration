@@ -1,0 +1,128 @@
+Functional Coverage Report
+Generated: 2024-01-20 14:15:00
+Tool: SystemVerilog Coverage Analyzer v2.1
+
+Design: UART Controller
+Overall Coverage: 58.2%
+
+================================================================================
+Covergroup: uart_tx_cg
+Coverage: 55.0%
+================================================================================
+
+Coverpoint: baud_rate
+Coverage: 60.0%
+Bin: BAUD_9600 - Hits: 200 - Status: Covered
+Bin: BAUD_19200 - Hits: 150 - Status: Covered
+Bin: BAUD_38400 - Hits: 100 - Status: Covered
+Bin: BAUD_57600 - Hits: 50 - Status: Covered
+Bin: BAUD_115200 - Hits: 25 - Status: Covered
+Bin: BAUD_230400 - Hits: 0 - Status: Uncovered
+Bin: BAUD_460800 - Hits: 0 - Status: Uncovered
+Bin: BAUD_921600 - Hits: 0 - Status: Uncovered
+
+Coverpoint: data_bits
+Coverage: 75.0%
+Bin: DATA_5 - Hits: 30 - Status: Covered
+Bin: DATA_6 - Hits: 25 - Status: Covered
+Bin: DATA_7 - Hits: 45 - Status: Covered
+Bin: DATA_8 - Hits: 200 - Status: Covered
+Bin: DATA_9 - Hits: 0 - Status: Uncovered
+
+Coverpoint: stop_bits
+Coverage: 50.0%
+Bin: STOP_1 - Hits: 300 - Status: Covered
+Bin: STOP_1_5 - Hits: 0 - Status: Uncovered
+Bin: STOP_2 - Hits: 0 - Status: Uncovered
+
+Coverpoint: parity
+Coverage: 66.7%
+Bin: NONE - Hits: 250 - Status: Covered
+Bin: EVEN - Hits: 80 - Status: Covered
+Bin: ODD - Hits: 45 - Status: Covered
+Bin: MARK - Hits: 0 - Status: Uncovered
+Bin: SPACE - Hits: 0 - Status: Uncovered
+
+Coverpoint: flow_control
+Coverage: 33.3%
+Bin: NONE - Hits: 200 - Status: Covered
+Bin: RTS_CTS - Hits: 50 - Status: Covered
+Bin: XON_XOFF - Hits: 0 - Status: Uncovered
+
+Cross: baud_rate x data_bits
+Coverage: 45.0%
+Bin: BAUD_9600 x DATA_8 - Hits: 80 - Status: Covered
+Bin: BAUD_19200 x DATA_8 - Hits: 60 - Status: Covered
+Bin: BAUD_38400 x DATA_8 - Hits: 40 - Status: Covered
+Bin: BAUD_57600 x DATA_8 - Hits: 20 - Status: Covered
+Bin: BAUD_115200 x DATA_8 - Hits: 10 - Status: Covered
+Bin: BAUD_230400 x DATA_8 - Hits: 0 - Status: Uncovered
+Bin: BAUD_460800 x DATA_8 - Hits: 0 - Status: Uncovered
+Bin: BAUD_921600 x DATA_8 - Hits: 0 - Status: Uncovered
+Bin: BAUD_9600 x DATA_7 - Hits: 20 - Status: Covered
+Bin: BAUD_9600 x DATA_6 - Hits: 10 - Status: Covered
+Bin: BAUD_9600 x DATA_5 - Hits: 5 - Status: Covered
+Bin: BAUD_9600 x DATA_9 - Hits: 0 - Status: Uncovered
+Bin: BAUD_19200 x DATA_9 - Hits: 0 - Status: Uncovered
+Bin: BAUD_38400 x DATA_9 - Hits: 0 - Status: Uncovered
+
+Cross: parity x stop_bits
+Coverage: 40.0%
+Bin: NONE x STOP_1 - Hits: 200 - Status: Covered
+Bin: EVEN x STOP_1 - Hits: 50 - Status: Covered
+Bin: ODD x STOP_1 - Hits: 30 - Status: Covered
+Bin: MARK x STOP_1 - Hits: 0 - Status: Uncovered
+Bin: SPACE x STOP_1 - Hits: 0 - Status: Uncovered
+Bin: NONE x STOP_1_5 - Hits: 0 - Status: Uncovered
+Bin: EVEN x STOP_1_5 - Hits: 0 - Status: Uncovered
+Bin: ODD x STOP_1_5 - Hits: 0 - Status: Uncovered
+Bin: MARK x STOP_1_5 - Hits: 0 - Status: Uncovered
+Bin: SPACE x STOP_1_5 - Hits: 0 - Status: Uncovered
+
+================================================================================
+Covergroup: uart_rx_cg
+Coverage: 62.0%
+================================================================================
+
+Coverpoint: rx_fifo_level
+Coverage: 75.0%
+Bin: EMPTY - Hits: 500 - Status: Covered
+Bin: QUARTER - Hits: 200 - Status: Covered
+Bin: HALF - Hits: 150 - Status: Covered
+Bin: THREE_QUARTER - Hits: 80 - Status: Covered
+Bin: FULL - Hits: 0 - Status: Uncovered
+
+Coverpoint: rx_error
+Coverage: 50.0%
+Bin: NO_ERROR - Hits: 800 - Status: Covered
+Bin: FRAMING_ERROR - Hits: 25 - Status: Covered
+Bin: PARITY_ERROR - Hits: 15 - Status: Covered
+Bin: OVERRUN_ERROR - Hits: 0 - Status: Uncovered
+Bin: BREAK_ERROR - Hits: 0 - Status: Uncovered
+
+Cross: rx_fifo_level x rx_error
+Coverage: 40.0%
+Bin: EMPTY x NO_ERROR - Hits: 400 - Status: Covered
+Bin: QUARTER x NO_ERROR - Hits: 150 - Status: Covered
+Bin: HALF x NO_ERROR - Hits: 100 - Status: Covered
+Bin: THREE_QUARTER x NO_ERROR - Hits: 50 - Status: Covered
+Bin: FULL x NO_ERROR - Hits: 0 - Status: Uncovered
+Bin: EMPTY x FRAMING_ERROR - Hits: 15 - Status: Covered
+Bin: QUARTER x FRAMING_ERROR - Hits: 5 - Status: Covered
+Bin: HALF x FRAMING_ERROR - Hits: 3 - Status: Covered
+Bin: THREE_QUARTER x FRAMING_ERROR - Hits: 2 - Status: Covered
+Bin: FULL x FRAMING_ERROR - Hits: 0 - Status: Uncovered
+Bin: EMPTY x PARITY_ERROR - Hits: 10 - Status: Covered
+Bin: QUARTER x PARITY_ERROR - Hits: 3 - Status: Covered
+Bin: HALF x PARITY_ERROR - Hits: 2 - Status: Covered
+Bin: THREE_QUARTER x PARITY_ERROR - Hits: 0 - Status: Uncovered
+Bin: FULL x PARITY_ERROR - Hits: 0 - Status: Uncovered
+Bin: EMPTY x OVERRUN_ERROR - Hits: 0 - Status: Uncovered
+Bin: QUARTER x OVERRUN_ERROR - Hits: 0 - Status: Uncovered
+Bin: HALF x OVERRUN_ERROR - Hits: 0 - Status: Uncovered
+Bin: THREE_QUARTER x OVERRUN_ERROR - Hits: 0 - Status: Uncovered
+Bin: FULL x OVERRUN_ERROR - Hits: 0 - Status: Uncovered
+
+================================================================================
+End of Report
+================================================================================
